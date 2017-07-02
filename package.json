@@ -1,0 +1,26 @@
+{
+  "name": "h5-ele",
+  "version": "1.0.0",
+  "description": "h5-ele",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "entry": {
+    "index.css": "./src/index.less"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XuCui123/he-ele.git"
+  },
+  "keywords": [
+    "ele",
+    "h5"
+  ],
+  "author": "xucui",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/XuCui123/he-ele/issues"
+  },
+  "homepage": "https://github.com/XuCui123/he-ele#readme"
+}

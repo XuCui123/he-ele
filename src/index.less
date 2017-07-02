@@ -1,0 +1,66 @@
+@import 'var.less';
+@import 'base.less';
+
+#root {
+}
+.rating {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    display: block;
+    color: #ddd;
+    font-family: "iconfont" !important;
+    font-size: 17 * @pm;
+    content: "\e733\e733\e733\e733\e733";
+  }
+  &:after {
+    width: 80%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    display: block;
+    color: #ffaa0c;
+    font-family: "iconfont" !important;
+    font-size: 17 * @pm;
+    content: "\e733\e733\e733\e733\e733";
+  }
+}
+.footer {
+  height: 102.4 * @pm;
+
+  .footer-links {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 7.68 * @pm;
+    height: 77.6 * @pm;
+    background-color: #fff;
+    box-shadow: 0 -1.7 * @pm 3.4 * @pm rgba(0, 0, 0, .1);
+
+    a {
+      flex: 1;
+      color: #666;
+      text-align: center;
+      &.active {
+        color: #0089dc;
+      }
+      i, span {
+        display: block;
+      }
+      i {
+        font-size: 34 * @pm;
+      }
+      span {
+        font-size: 17 * @pm;
+      }
+    }
+  }
+}

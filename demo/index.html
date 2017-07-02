@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ele.me</title>
+  <script defer>!function(e,t){function i(){var t=n.getBoundingClientRect().width;t/m>540&&(t=540*m);var i=t/10;n.style.fontSize=i+"px",s.rem=e.rem=i}var a,r=e.document,n=r.documentElement,o=r.querySelector('meta[name="viewport"]'),l=r.querySelector('meta[name="flexible"]'),m=0,d=0,s=t.flexible||(t.flexible={});if(o){console.warn("将根据已有的meta标签来设置缩放比例");var p=o.getAttribute("content").match(/initial\-scale=([\d\.]+)/);p&&(d=parseFloat(p[1]),m=parseInt(1/d))}else if(l){var c=l.getAttribute("content");if(c){var u=c.match(/initial\-dpr=([\d\.]+)/),f=c.match(/maximum\-dpr=([\d\.]+)/);u&&(m=parseFloat(u[1]),d=parseFloat((1/m).toFixed(2))),f&&(m=parseFloat(f[1]),d=parseFloat((1/m).toFixed(2)))}}if(!m&&!d){var v=e.navigator.appVersion.match(/android/gi),h=e.chrome,x=e.navigator.appVersion.match(/iphone|ipad/gi),b=e.devicePixelRatio,w=(v||x)&&h;m=x||w?b>=3&&(!m||m>=3)?3:b>=2&&(!m||m>=2)?2:1:1,d=1/m}if(n.setAttribute("data-dpr",m),!o)if(o=r.createElement("meta"),o.setAttribute("name","viewport"),o.setAttribute("content","initial-scale="+d+", maximum-scale="+d+", minimum-scale="+d+", user-scalable=no"),n.firstElementChild)n.firstElementChild.appendChild(o);else{var g=r.createElement("div");g.appendChild(o),r.write(g.innerHTML)}e.addEventListener("resize",function(){clearTimeout(a),a=setTimeout(i,300)},!1),e.addEventListener("pageshow",function(e){e.persisted&&(clearTimeout(a),a=setTimeout(i,300))},!1),"complete"===r.readyState?r.body.style.fontSize=12*m+"px":r.addEventListener("DOMContentLoaded",function(e){r.body.style.fontSize=12*m+"px"},!1),i(),s.dpr=e.dpr=m,s.refreshRem=i,s.rem2px=function(e){var t=parseFloat(e)*this.rem;return"string"==typeof e&&e.match(/rem$/)&&(t+="px"),t},s.px2rem=function(e){var t=parseFloat(e)/this.rem;return"string"==typeof e&&e.match(/px$/)&&(t+="rem"),t}}(window,window.lib||(window.lib={}))</script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <div id="root">
+    <header class="header">
+      <div class="wrap">
+        <div class="address">
+          <i class="icon icon-location"></i>
+          <span class="text">
+            长宁区贝多芬广场东50米(凯旋路)
+          </span>
+        </div>
+        <aside class="weather">
+          <div>
+            <h2 class="temperature">30°</h2>
+            <p>阴</p>
+          </div>
+          <img alt="天气预报" class="weather_img" src="//fuss10.elemecdn.com/3/73/19e992e612e983f517e2690cb3e16png.png?imageMogr/thumbnail/!69x69r/gravity/Center/crop/69x69/">
+        </aside>
+      </div>
+      <a href="">
+        <input type="text" placeholder="搜索商家、商品" aria-label="搜索商家、商品" class="search">
+      </a>
+      <div class="hotfood">
+        <a href="">烤鸡</a>
+        <a href="">咸肉菜饭</a>
+        <a href="">蝴蝶酥</a>
+      </div>
+    </header>
+    <div class="foodentry">
+      <div class="food-list">
+        <div class="food-item">
+          <a href="javascript:">
+            <div class="container">
+              <img src="//fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/thumbnail/!90x90r/gravity/Center/crop/90x90/">
+            </div>
+            <span class="title">美食</span>
+          </a>
+          <a href="javascript:">
+            <div class="container">
+              <img src="//fuss10.elemecdn.com/2/35/696aa5cf9820adada9b11a3d14bf5jpeg.jpeg?imageMogr/thumbnail/!90x90r/gravity/Center/crop/90x90/">
+            </div>
+            <span class="title">甜品饮品</span>
+          </a>
+          <a href="javascript:">
+            <div class="container">
+              <img src="//fuss10.elemecdn.com/0/da/f42235e6929a5cb0e7013115ce78djpeg.jpeg?imageMogr/thumbnail/!90x90r/gravity/Center/crop/90x90/">
+            </div>
+            <span class="title">商超便利</span>
+          </a>
+          <a href="javascript:">
+            <div class="container">
+              <img src="//fuss10.elemecdn.com/d/49/7757ff22e8ab28e7dfa5f7e2c2692jpeg.jpeg?imageMogr/thumbnail/!90x90r/gravity/Center/crop/90x90/">
+            </div>
+            <span class="title">预订早餐</span>
+          </a>
+          <a href="javascript:">
+            <div class="container">
+              <img src="//fuss10.elemecdn.com/c/db/d20d49e5029281b9b73db1c5ec6f9jpeg.jpeg?imageMogr/thumbnail/!90x90r/gravity/Center/crop/90x90/">
+            </div>
+            <span class="title">果蔬生鲜</span>
+          </a>
+          <a href="javascript:">
+            <div class="container">
+              <img src="//fuss10.elemecdn.com/a/fa/d41b04d520d445dc5de42dae9a384jpeg.jpeg?imageMogr/thumbnail/!90x90r/gravity/Center/crop/90x90/">
+            </div>
+            <span class="title">新店特惠</span>
+          </a>
+          <a href="javascript:">
+            <div class="container">
+              <img src="//fuss10.elemecdn.com/3/84/8e031bf7b3c036b4ec19edff16e46jpeg.jpeg?imageMogr/thumbnail/!90x90r/gravity/Center/crop/90x90/">
+            </div>
+            <span class="title">准时达</span>
+          </a>
+          <a href="javascript:">
+            <div class="container">
+              <img src="//fuss10.elemecdn.com/d/38/7bddb07503aea4b711236348e2632jpeg.jpeg?imageMogr/thumbnail/!90x90r/gravity/Center/crop/90x90/">
+            </div>
+            <span class="title">午餐</span>
+          </a>
+        </div>
+        <div class="food-item">
+          <a href="javascript:">
+            <div class="container">
+              <img src="//fuss10.elemecdn.com/1/c1/dfade1a31f312f161074c3dd6a89cjpeg.jpeg?imageMogr/thumbnail/!90x90r/gravity/Center/crop/90x90/">
+            </div>
+            <span class="title">帮买帮送</span>
+          </a>
+          <a href="javascript:">
+            <div class="container">
+              <img src="//fuss10.elemecdn.com/b/7f/432619fb21a40b05cd25d11eca02djpeg.jpeg?imageMogr/thumbnail/!90x90r/gravity/Center/crop/90x90/">
+            </div>
+            <span class="title">汉堡薯条</span>
+          </a>
+          <a href="javascript:">
+            <div class="container">
+              <img src="//fuss10.elemecdn.com/2/17/244241b514affc0f12f4168cf6628jpeg.jpeg?imageMogr/thumbnail/!90x90r/gravity/Center/crop/90x90/">
+            </div>
+            <span class="title">包子粥店</span>
+          </a>
+          <a href="javascript:">
+            <div class="container">
+              <img src="//fuss10.elemecdn.com/8/83/171fd98b85dee3b3f4243b7459b48jpeg.jpeg?imageMogr/thumbnail/!90x90r/gravity/Center/crop/90x90/">
+            </div>
+            <span class="title">鲜花蛋糕</span>
+          </a>
+          <a href="javascript:">
+            <div class="container">
+              <img src="//fuss10.elemecdn.com/3/c7/a9ef469a12e7a596b559145b87f09jpeg.jpeg?imageMogr/thumbnail/!90x90r/gravity/Center/crop/90x90/">
+            </div>
+            <span class="title">麻辣烫</span>
+          </a>
+          <a href="javascript:">
+            <div class="container">
+              <img src="//fuss10.elemecdn.com/9/7c/9700836a33e05c2410bda8da59117jpeg.jpeg?imageMogr/thumbnail/!90x90r/gravity/Center/crop/90x90/">
+            </div>
+            <span class="title">川湘菜</span>
+          </a>
+          <a href="javascript:">
+            <div class="container">
+              <img src="//fuss10.elemecdn.com/7/b6/235761e50d391445f021922b71789jpeg.jpeg?imageMogr/thumbnail/!90x90r/gravity/Center/crop/90x90/">
+            </div>
+            <span class="title">披萨意面</span>
+          </a>
+          <a href="javascript:">
+            <div class="container">
+              <img src="//fuss10.elemecdn.com/6/d2/de0683a49a0655c728b70fdb344d5jpeg.jpeg?imageMogr/thumbnail/!90x90r/gravity/Center/crop/90x90/">
+            </div>
+            <span class="title">异国料理</span>
+          </a>
+        </div>
+      </div>
+      <div class="indicators">
+        <div class="circle active"></div>
+        <div class="circle"></div>
+      </div>
+    </div>
+    <h3 class="index-title">推荐商家</h3>
+    <section class="shoplist">
+      <section class="shop">
+        <div class="logo">
+          <div class="logo_main">
+            <img alt="桃园眷村（南丰城店）" src="//fuss10.elemecdn.com/1/f0/bf9bf8bbc418d491bda71a7d8179djpeg.jpeg?imageMogr/thumbnail/!120x120r/gravity/Center/crop/120x120/" class="shop_img">
+          </div>
+          <div class="logo_newshop">
+            <span>新店</span>
+          </div>
+        </div>
+        <div class="shop_detail">
+          <section class="name">
+            <h3 class="shop_name">
+              <span>
+                桃园眷村（南风城店）
+              </span>
+            </h3>
+          </section>
+          <section class="star">
+            <div class="index-rateWrap">
+              <div class="rating"></div>
+              <span class="index-rate_2O_yP">4.6</span>
+              <span>月售881单</span>
+            </div>
+            <div class="index-deliveryWrap_1Q_ky">
+              <span class="index-iconDelivery_267-X">准时达</span>
+              <span class="index-iconDelivery_267-X index-hollow_lqvFq">
+                <span>蜂鸟专送</span>
+              </span>
+            </div>
+          </section>
+          <section class="cost">
+            <div class="index-moneylimit_1xDf3">
+              <span>¥20起送</span>
+              <span>配送费¥5</span>
+              <span>¥33/人</span>
+            </div>
+            <div class="index-timedistanceWrap_2RmAM">
+              <span class="index-distanceWrap_HYwgP">1.20km</span>
+              <span class="index-timeWrap_1pa5y">42分钟</span>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section class="shop">
+        <div class="logo">
+          <div class="logo_main">
+            <img alt="桃园眷村（南丰城店）" src="//fuss10.elemecdn.com/1/f0/bf9bf8bbc418d491bda71a7d8179djpeg.jpeg?imageMogr/thumbnail/!120x120r/gravity/Center/crop/120x120/" class="shop_img">
+          </div>
+          <div class="logo_newshop">
+            <span>新店</span>
+          </div>
+        </div>
+        <div class="shop_detail">
+          <section class="name">
+            <h3 class="shop_name">
+              <span>
+                桃园眷村（南风城店）
+              </span>
+            </h3>
+          </section>
+          <section class="star">
+            <div class="index-rateWrap">
+              <div class="rating"></div>
+              <span class="index-rate_2O_yP">4.6</span>
+              <span>月售881单</span>
+            </div>
+            <div class="index-deliveryWrap_1Q_ky">
+              <span class="index-iconDelivery_267-X">准时达</span>
+              <span class="index-iconDelivery_267-X index-hollow_lqvFq">
+                <span>蜂鸟专送</span>
+              </span>
+            </div>
+          </section>
+          <section class="cost">
+            <div class="index-moneylimit_1xDf3">
+              <span>¥20起送</span>
+              <span>配送费¥5</span>
+              <span>¥33/人</span>
+            </div>
+            <div class="index-timedistanceWrap_2RmAM">
+              <span class="index-distanceWrap_HYwgP">1.20km</span>
+              <span class="index-timeWrap_1pa5y">42分钟</span>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section class="shop">
+        <div class="logo">
+          <div class="logo_main">
+            <img alt="桃园眷村（南丰城店）" src="//fuss10.elemecdn.com/1/f0/bf9bf8bbc418d491bda71a7d8179djpeg.jpeg?imageMogr/thumbnail/!120x120r/gravity/Center/crop/120x120/" class="shop_img">
+          </div>
+          <div class="logo_newshop">
+            <span>新店</span>
+          </div>
+        </div>
+        <div class="shop_detail">
+          <section class="name">
+            <h3 class="shop_name">
+              <span>
+                桃园眷村（南风城店）
+              </span>
+            </h3>
+          </section>
+          <section class="star">
+            <div class="index-rateWrap">
+              <div class="rating"></div>
+              <span class="index-rate_2O_yP">4.6</span>
+              <span>月售881单</span>
+            </div>
+            <div class="index-deliveryWrap_1Q_ky">
+              <span class="index-iconDelivery_267-X">准时达</span>
+              <span class="index-iconDelivery_267-X index-hollow_lqvFq">
+                <span>蜂鸟专送</span>
+              </span>
+            </div>
+          </section>
+          <section class="cost">
+            <div class="index-moneylimit_1xDf3">
+              <span>¥20起送</span>
+              <span>配送费¥5</span>
+              <span>¥33/人</span>
+            </div>
+            <div class="index-timedistanceWrap_2RmAM">
+              <span class="index-distanceWrap_HYwgP">1.20km</span>
+              <span class="index-timeWrap_1pa5y">42分钟</span>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section class="shop">
+        <div class="logo">
+          <div class="logo_main">
+            <img alt="桃园眷村（南丰城店）" src="//fuss10.elemecdn.com/1/f0/bf9bf8bbc418d491bda71a7d8179djpeg.jpeg?imageMogr/thumbnail/!120x120r/gravity/Center/crop/120x120/" class="shop_img">
+          </div>
+          <div class="logo_newshop">
+            <span>新店</span>
+          </div>
+        </div>
+        <div class="shop_detail">
+          <section class="name">
+            <h3 class="shop_name">
+              <span>
+                桃园眷村（南风城店）
+              </span>
+            </h3>
+          </section>
+          <section class="star">
+            <div class="index-rateWrap">
+              <div class="rating"></div>
+              <span class="index-rate_2O_yP">4.6</span>
+              <span>月售881单</span>
+            </div>
+            <div class="index-deliveryWrap_1Q_ky">
+              <span class="index-iconDelivery_267-X">准时达</span>
+              <span class="index-iconDelivery_267-X index-hollow_lqvFq">
+                <span>蜂鸟专送</span>
+              </span>
+            </div>
+          </section>
+          <section class="cost">
+            <div class="index-moneylimit_1xDf3">
+              <span>¥20起送</span>
+              <span>配送费¥5</span>
+              <span>¥33/人</span>
+            </div>
+            <div class="index-timedistanceWrap_2RmAM">
+              <span class="index-distanceWrap_HYwgP">1.20km</span>
+              <span class="index-timeWrap_1pa5y">42分钟</span>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section class="shop">
+        <div class="logo">
+          <div class="logo_main">
+            <img alt="桃园眷村（南丰城店）" src="//fuss10.elemecdn.com/1/f0/bf9bf8bbc418d491bda71a7d8179djpeg.jpeg?imageMogr/thumbnail/!120x120r/gravity/Center/crop/120x120/" class="shop_img">
+          </div>
+          <div class="logo_newshop">
+            <span>新店</span>
+          </div>
+        </div>
+        <div class="shop_detail">
+          <section class="name">
+            <h3 class="shop_name">
+              <span>
+                桃园眷村（南风城店）
+              </span>
+            </h3>
+          </section>
+          <section class="star">
+            <div class="index-rateWrap">
+              <div class="rating"></div>
+              <span class="index-rate_2O_yP">4.6</span>
+              <span>月售881单</span>
+            </div>
+            <div class="index-deliveryWrap_1Q_ky">
+              <span class="index-iconDelivery_267-X">准时达</span>
+              <span class="index-iconDelivery_267-X index-hollow_lqvFq">
+                <span>蜂鸟专送</span>
+              </span>
+            </div>
+          </section>
+          <section class="cost">
+            <div class="index-moneylimit_1xDf3">
+              <span>¥20起送</span>
+              <span>配送费¥5</span>
+              <span>¥33/人</span>
+            </div>
+            <div class="index-timedistanceWrap_2RmAM">
+              <span class="index-distanceWrap_HYwgP">1.20km</span>
+              <span class="index-timeWrap_1pa5y">42分钟</span>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section class="shop">
+        <div class="logo">
+          <div class="logo_main">
+            <img alt="桃园眷村（南丰城店）" src="//fuss10.elemecdn.com/1/f0/bf9bf8bbc418d491bda71a7d8179djpeg.jpeg?imageMogr/thumbnail/!120x120r/gravity/Center/crop/120x120/" class="shop_img">
+          </div>
+          <div class="logo_newshop">
+            <span>新店</span>
+          </div>
+        </div>
+        <div class="shop_detail">
+          <section class="name">
+            <h3 class="shop_name">
+              <span>
+                桃园眷村（南风城店）
+              </span>
+            </h3>
+          </section>
+          <section class="star">
+            <div class="index-rateWrap">
+              <div class="rating"></div>
+              <span class="index-rate_2O_yP">4.6</span>
+              <span>月售881单</span>
+            </div>
+            <div class="index-deliveryWrap_1Q_ky">
+              <span class="index-iconDelivery_267-X">准时达</span>
+              <span class="index-iconDelivery_267-X index-hollow_lqvFq">
+                <span>蜂鸟专送</span>
+              </span>
+            </div>
+          </section>
+          <section class="cost">
+            <div class="index-moneylimit_1xDf3">
+              <span>¥20起送</span>
+              <span>配送费¥5</span>
+              <span>¥33/人</span>
+            </div>
+            <div class="index-timedistanceWrap_2RmAM">
+              <span class="index-distanceWrap_HYwgP">1.20km</span>
+              <span class="index-timeWrap_1pa5y">42分钟</span>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section class="shop">
+        <div class="logo">
+          <div class="logo_main">
+            <img alt="桃园眷村（南丰城店）" src="//fuss10.elemecdn.com/1/f0/bf9bf8bbc418d491bda71a7d8179djpeg.jpeg?imageMogr/thumbnail/!120x120r/gravity/Center/crop/120x120/" class="shop_img">
+          </div>
+          <div class="logo_newshop">
+            <span>新店</span>
+          </div>
+        </div>
+        <div class="shop_detail">
+          <section class="name">
+            <h3 class="shop_name">
+              <span>
+                桃园眷村（南风城店）
+              </span>
+            </h3>
+          </section>
+          <section class="star">
+            <div class="index-rateWrap">
+              <div class="rating"></div>
+              <span class="index-rate_2O_yP">4.6</span>
+              <span>月售881单</span>
+            </div>
+            <div class="index-deliveryWrap_1Q_ky">
+              <span class="index-iconDelivery_267-X">准时达</span>
+              <span class="index-iconDelivery_267-X index-hollow_lqvFq">
+                <span>蜂鸟专送</span>
+              </span>
+            </div>
+          </section>
+          <section class="cost">
+            <div class="index-moneylimit_1xDf3">
+              <span>¥20起送</span>
+              <span>配送费¥5</span>
+              <span>¥33/人</span>
+            </div>
+            <div class="index-timedistanceWrap_2RmAM">
+              <span class="index-distanceWrap_HYwgP">1.20km</span>
+              <span class="index-timeWrap_1pa5y">42分钟</span>
+            </div>
+          </section>
+        </div>
+      </section>
+    </section>
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="" class="active">
+          <i class="icon icon-eliaomo"></i>
+          <span>外卖</span>
+        </a>
+        <a href="" class="">
+          <i class="icon icon-faxian"></i>
+          <span>发现</span>
+        </a>
+        <a href="" class="">
+          <i class="icon icon-dingdan"></i>
+          <span>订单</span>
+        </a>
+        <a href="" class="">
+          <i class="icon icon-wode-weixuanzhong"></i>
+          <span>我的</span>
+        </a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
